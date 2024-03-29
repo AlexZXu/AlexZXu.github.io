@@ -1,0 +1,19 @@
+.home-hero {
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: max(90%, 400px);
+}
+
+
+.seperator {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid red;
+    margin-top: -13.9vw;
+    position: relative;
+}
+
+  
