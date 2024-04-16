@@ -1,6 +1,9 @@
 import { defineConfig } from 'astro/config';
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://alexzxu.github.io/',
+  site: 'https://alexzxu.github.io/',
+  integrations: [react()]
 });

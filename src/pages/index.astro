@@ -3,11 +3,128 @@ import '../styles/global.css'
 import '../styles/home.css'
 import { Image } from 'astro:assets';
 import johnsCreekHighSchoolScaled from '../images/Johns_Creek_High_School-scaled.jpeg'
+import homePageCommunityService from '../images/home-page-community-service.jpg'
+import homePageCompetitions from '../images/home-page-competitions.jpg'
+import homePageEducation from '../images/home-page-education.jpg'
+import homePageImmersion from '../images/home-page-immersion.jpg'
+import CoffeeBackground from '../images/coffee-background.jpg'
+import TransparentNavbar from '../components/TransparentNavbar.jsx';
 ---
 
 <html>
 <body>
-    <Image src={johnsCreekHighSchoolScaled} alt="Johns Creek High School" class="home-hero"/>
-    <div class="seperator"></div>
+    <TransparentNavbar />
+    <div class="hero-container">
+        <div class="image-overlay"></div>
+        <Image src={johnsCreekHighSchoolScaled} alt="Johns Creek High School" class="home-hero"/>
+        <div class="hero-content">
+            <div class="hero-title">
+                <span>JOHNS CREEK</span>
+                <span class="red">FBLA</span>
+            </div>
+            <div class="button-container">
+                <button class="join-button">JOIN JCHS FBLA</button>
+            </div>
+        </div>
+       
+    </div>
+
+    <div class="what-we-do-container">
+        <div>
+            <div class="section-title">
+                WHAT OUR CHAPTER DOES
+            </div>
+            <div class="divider-row">
+                <hr class="title-divider"/>
+            </div>
+        </div>
+
+        <div class="activity-grid">
+            <div class="activity-item">
+                <Image src={homePageCompetitions} alt="Community Service" class="activity-item-image"/>
+                <div class="activity-item-text-container">
+                    <div class="activity-item-title">Competitions</div>
+                    <div class="activity-item-desc">Johns Creek FBLA is a nationally recognized chapter with numerous state and national winners. Come compete with us to the top.</div>
+
+                </div>
+            </div>
+            <div class="activity-item">
+                <Image src={homePageEducation} alt="Johns Creek High School" class="activity-item-image"/>
+                <div class="activity-item-text-container">
+                    <div class="activity-item-title">Education</div>
+                    <div class="activity-item-desc">FBLA is co-curricular with Career Tech and Engineering (CTAE) courses, and many of our organization’s core values and competitive events align with the business and computer science curriculum.</div>
+
+                </div>
+            </div>
+            <div class="activity-item">
+                <Image src={homePageImmersion} alt="Johns Creek High School" class="activity-item-image"/>
+                <div class="activity-item-text-container">
+                    <div class="activity-item-title">Immersion</div>
+                    <div class="activity-item-desc">Members get the opportunity to experience business and leadership workshops at numerous state and national conferences throughout the year. One of our most popular events is the Fall Motivational Rally at Six Flags.</div>
+
+                </div>
+            </div>
+            <div class="activity-item">
+                <Image src={homePageCommunityService} alt="Johns Creek High School" class="activity-item-image"/>
+                <div class="activity-item-text-container">
+                    <div class="activity-item-title">Community Service</div>
+                    <div class="activity-item-desc">Johns Creek FBLA provides members with various community service opportunities every month as well as Community Service Awards (CSAs).</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="counter-container">
+        <div class="image-overlay"></div>
+        <Image src={CoffeeBackground} alt="Johns Creek High School" class="home-hero"/>
+        <div class="counter-content">
+            <div>
+                <div class="section-title white-text">
+                    OUR ACHIEVEMENTS
+                </div>
+                <div class="divider-row">
+                    <hr class="title-divider longer-length" />
+                </div>
+            </div>
+            <div class="achievements-container">
+                <div class="achievements-item">
+                    <div class="achievements-number">
+                        350+
+                    </div>
+                    <div class="achievements-text">
+                        Members
+                    </div>
+                </div>
+                <div class="achievements-item">
+                    <div class="achievements-number">
+                        100+
+                    </div>
+                    <div class="achievements-text">
+                        State Winners
+                    </div>
+                </div>
+                <div class="achievements-item">
+                    <div class="achievements-number">
+                        60+
+                    </div>
+                    <div class="achievements-text">
+                        National Qualifiers
+                    </div>
+                </div>
+                <div class="achievements-item">
+                    <div class="achievements-number">
+                        40+
+                    </div>
+                    <div class="achievements-text">
+                        National Winners
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+       
+    </div>
+
 </body>
 </html>

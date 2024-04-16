@@ -1,19 +1,204 @@
 .home-hero {
-    position: absolute;
-    left: 0;
     object-fit: cover;
+    position: absolute;
+    top: 0;
     width: 100%;
-    height: max(90%, 400px);
+    height: 100%;
+    z-index: -1;
 }
 
-
-.seperator {
-    width: 0;
-    height: 0;
-    border-right: 100vw solid transparent;
-    border-bottom: 13.9vw solid red;
-    margin-top: -13.9vw;
+.hero-container {
     position: relative;
+    overflow-x: hidden;
+    top: 0;
+    width: 100%;
+    height: max(125vh, 500px);
+    box-shadow: 0px 3px 10px 0 rgba(65, 31, 56, 0.47);
+    z-index: -1;
+    
 }
 
-  
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: #1c0c118c;
+    z-index: 1;
+
+}
+
+.hero-title {
+    display: flex;
+    position: relative;
+    left: 100px;
+    flex-direction: column;
+    font-size: min(148px, 14.5vw);
+    font-weight: 800;
+    font-family: "Oswald";
+    color: white;
+    line-height: 147px;
+    z-index: 2;
+}
+
+.red {
+    color: #bf0d3e;
+}
+
+
+.section-title {
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    color: #333333;
+    text-align: center;
+}
+
+.divider-row {
+    width: 100%;
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+}
+
+.title-divider {
+    border: none;
+    border-top: 5px solid #bf0d3e;
+    width: 28%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 7;
+    top: 250px;
+}
+
+.join-button {
+    margin-top: 110px;
+    font-family: "Roboto";
+    font-size: 16px;
+    background-color: #bf0d3e;
+    color: white;
+    border: none;
+    padding: 19px 26px 19px 26px;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.what-we-do-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 100px;
+    padding-bottom: 130px;
+}
+
+.activity-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px 20px;
+}
+
+.activity-item {
+    display: flex;    
+    align-items: center;
+    gap: 5%;
+}
+
+.activity-item-image {
+    width: 180px;
+    height: 180px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 3px 10px 0 rgba(65, 31, 56, 0.47);
+}
+
+.activity-item-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex-grow: 1;
+}
+
+.activity-item-title {
+    font-family: 'Roboto';
+    font-size: 29px;
+    font-weight: 700;
+    color: #020101;
+    letter-spacing: 0.2px;
+}
+
+.activity-item-desc {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.counter-container {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.counter-content {
+    position: relative;
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.white-text {
+    color: #ffffff;
+    z-index: 3;
+    font-size: 50px;
+}
+
+.achievements-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.achievements-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+.achievements-number {
+    font-family: 'Roboto';
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.longer-length {
+    width: 80%;
+}
+
+.achievements-text {
+    font-family: 'Roboto';
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
