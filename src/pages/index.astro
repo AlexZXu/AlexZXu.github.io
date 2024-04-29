@@ -8,12 +8,14 @@ import homePageCompetitions from '../images/home-page-competitions.jpg'
 import homePageEducation from '../images/home-page-education.jpg'
 import homePageImmersion from '../images/home-page-immersion.jpg'
 import CoffeeBackground from '../images/coffee-background.jpg'
-import TransparentNavbar from '../components/TransparentNavbar.jsx';
+import TransparentNavbar from '../components/TransparentNavbar.astro';
 ---
 
 <html>
 <body>
-    <TransparentNavbar />
+    <div class="header-container">
+        <TransparentNavbar />
+    </div>
     <div class="hero-container">
         <div class="image-overlay"></div>
         <Image src={johnsCreekHighSchoolScaled} alt="Johns Creek High School" class="home-hero"/>

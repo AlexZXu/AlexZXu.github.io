@@ -12,10 +12,14 @@
     overflow-x: hidden;
     top: 0;
     width: 100%;
-    height: max(125vh, 500px);
+    height: clamp(500px, 125vh, 870px);
     box-shadow: 0px 3px 10px 0 rgba(65, 31, 56, 0.47);
     z-index: -1;
     
+}
+
+.header-container {
+    width: 100%;
 }
 
 .image-overlay {
@@ -33,7 +37,6 @@
 .hero-title {
     display: flex;
     position: relative;
-    left: 100px;
     flex-direction: column;
     font-size: min(148px, 14.5vw);
     font-weight: 800;
@@ -41,6 +44,10 @@
     color: white;
     line-height: 147px;
     z-index: 2;
+    padding-left: 85px;
+    padding-right: 85px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .red {

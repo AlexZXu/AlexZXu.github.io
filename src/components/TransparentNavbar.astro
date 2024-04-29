@@ -1,0 +1,46 @@
+---
+import "../styles/navbar.css"
+import image from "../images/logo.svg"
+import { Image } from "astro:assets";
+---
+
+<div class="navbar-container">
+  <Image src={image} class="navbar-logo" alt="logo" />
+  <div class="link-container">
+    <div class="dropdown forms-dropdown">
+      <div class="link">FORMS AND PAYMENTS<span class="down-arrow"><svg width="9" height="9" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></div>
+      <div class="dropdown-content forms-content">
+        <a href="/rlc/">Membership Form</a>
+        <a>Membership Dues</a>
+      </div>
+    </div>
+
+    <div class="dropdown events-dropdown">
+      <div class="link">EVENTS<span class="down-arrow"><svg width="9" height="9" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></div>
+      <div class="dropdown-content events-content">
+        <a>Membership Form</a>
+        <a>Membership Dues</a>
+      </div>
+    </div>
+
+    <div class="dropdown about-dropdown">
+      <div class="link">ABOUT US<span class="down-arrow"><svg width="9" height="9" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></div>
+      <div class="dropdown-content about-content">
+        <a>Membership Form</a>
+        <a>Membership Dues</a>
+      </div>
+    </div>
+
+    <div class="dropdown resources-dropdown">
+      <div class="link">RESOURCES<span class="down-arrow"><svg width="9" height="9" viewBox="0 0 15 15"><path d="M2.1,3.2l5.4,5.4l5.4-5.4L15,4.3l-7.5,7.5L0,4.3L2.1,3.2z"></path></svg></span></div>
+      <div class="dropdown-content-left resources-content">
+        <a>Membership Form</a>
+        <a>Membership Dues</a>
+      </div>
+    </div>
+  </div>
+  <div class="link-hamburger-button">
+    
+  </div>
+</div>
+
