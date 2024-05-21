@@ -8,13 +8,13 @@ import homePageCompetitions from '../images/home-page-competitions.jpg'
 import homePageEducation from '../images/home-page-education.jpg'
 import homePageImmersion from '../images/home-page-immersion.jpg'
 import CoffeeBackground from '../images/coffee-background.jpg'
-import TransparentNavbar from '../components/TransparentNavbar.astro';
+import Navbar from '../components/Navbar.jsx'
 ---
 
 <html>
 <body>
     <div class="header-container">
-        <TransparentNavbar />
+        <Navbar type="transparent" client:load />
     </div>
     <div class="hero-container">
         <div class="image-overlay"></div>
@@ -25,7 +25,7 @@ import TransparentNavbar from '../components/TransparentNavbar.astro';
                 <span class="red">FBLA</span>
             </div>
             <div class="button-container">
-                <button class="join-button">JOIN JCHS FBLA</button>
+                <a href="https://www.google.com/" class="join-button">JOIN JCHS FBLA</a>
             </div>
         </div>
        
@@ -40,7 +40,6 @@ import TransparentNavbar from '../components/TransparentNavbar.astro';
                 <hr class="title-divider"/>
             </div>
         </div>
-
         <div class="activity-grid">
             <div class="activity-item">
                 <Image src={homePageCompetitions} alt="Community Service" class="activity-item-image"/>
