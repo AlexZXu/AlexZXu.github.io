@@ -277,6 +277,19 @@
     }
 }
 
-@media screen and (max-width: 850px) {
-    
+@media screen and (max-width: 550px) {
+    .navbar-logo {
+        width: 200px;
+        height: 70%;
+    }
+
+    .transparent-navbar-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
