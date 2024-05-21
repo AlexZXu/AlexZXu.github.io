@@ -222,6 +222,32 @@
     .hero-content {
         top: 250px;
     }
+
+    .activity-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+        margin-right: 20px;;
+    }
+
+    .counter-content {
+        gap: 25px;
+    }
+    .achievements-container {
+        gap: 40px;
+    }
+    .white-text {
+        font-size: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .achievements-number {
+        font-size: 40px;
+    }
+    .achievements-text{
+         font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -240,8 +266,25 @@
     .hero-content {
         top: 200px;
     }
+    
+    .achievements-container {
+        flex-direction: column;
+    }
+
+    .counter-container {
+        height: 600px;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    
+@media screen and (max-width: 610px) {
+    .activity-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .white-text {
+        font-size: 35px;
+    }
 }
