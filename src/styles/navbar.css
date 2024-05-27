@@ -2,35 +2,37 @@
     width: 100%;
     position: absolute;
     top: 0;
-    display: flex;
-    justify-content: space-between;
     height: 120px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 75px;
     padding-right: 75px;
-    max-width: 1500px;
-    left: 50%; 
-    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
     z-index: 999;
 }
 
 .flat-navbar-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
     height: 120px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 75px;
     padding-right: 75px;
-    max-width: 1500px;
-    left: 50%; 
-    transform: translate(-50%);
     background: white;
     position: relative;
     top: 0px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navbar-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1500px;
 }
 
 .navbar-logo {
@@ -288,7 +290,7 @@
         padding-right: 20px;
     }
 
-    .navbar-container {
+    .flat-navbar-container {
         padding-left: 20px;
         padding-right: 20px;
     }

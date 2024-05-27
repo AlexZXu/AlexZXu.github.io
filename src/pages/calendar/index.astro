@@ -1,0 +1,30 @@
+---
+import Navbar from '../../components/Navbar.jsx'
+import '../../styles/global.css'
+import '../../styles/events.css'
+---
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCHS FBLA</title>
+</head>
+
+<body>
+    <div class="header-container">
+        <Navbar type="flat" client:load />
+    </div>
+
+    <div>
+        <div class="event-title">
+            CALENDAR
+        </div>
+        <div class="divider-row">
+            <hr class="title-divider"/>
+        </div>
+    </div>
+    <div class="calendar-container">
+        <iframe src="https://calendar.google.com/calendar/embed?src=fba7q5aluemop4g7pnvmjcs67s%40group.calendar.google.com&ctz=America%2FNew_York" class="calendar-frame"></iframe>
+    </div>
+</body>

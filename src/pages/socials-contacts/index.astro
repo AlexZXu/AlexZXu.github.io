@@ -1,0 +1,70 @@
+---
+import Navbar from '../../components/Navbar.jsx'
+import '../../styles/global.css'
+import '../../styles/events.css'
+import { Image } from 'astro:assets';
+import RemindLogo from '../../images/remind-logo-social.png'
+import InstagramLogo from '../../images/instagram-logo-social.png'
+import GmailLogo from '../../images/gmail-logo-social.png'
+---
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JCHS FBLA</title>
+</head>
+<body>
+    <div class="header-container">
+        <Navbar type="flat" client:load />
+    </div>
+    <div>
+        <div class="event-title">
+            SOCIALS & CONTACTS
+        </div>
+        <div class="divider-row">
+            <hr class="title-divider"/>
+        </div>
+    </div>
+
+    <div class="social-container" style="margin-top: 40px">
+        <Image src={RemindLogo} alt="Remind Logo" class="social-logo"/>
+        <h1 class="team-title">Remind</h1>
+        <div class="info-list">
+            <div class="team-list-item">
+                Freshman: @jcfbla28
+            </div>
+            <div class="team-list-item">
+                Sophomores: @jcfbla27
+            </div>
+            <div class="team-list-item">
+                Juniors: @jcfbla26
+            </div>
+            <div class="team-list-item">
+                Seniors: @jcfbla25
+            </div>
+        </div>
+    </div>
+
+    <div class="social-container" style="margin-top: -10px">
+        <Image src={InstagramLogo} alt="Remind Logo" class="social-logo"/>
+        <h1 class="team-title">Instagram</h1>
+        <div class="info-list">
+            <div class="team-list-item">
+                @jchsfbla
+            </div>
+        </div>
+    </div>
+
+    <div class="social-container" style="margin-top: -10px">
+        <Image src={GmailLogo} alt="Remind Logo" class="social-logo"/>
+        <h1 class="team-title">Gmail</h1>
+        <div class="info-list">
+            <div class="team-list-item">
+                jchsfbla@gmail.com
+            </div>
+        </div>
+    </div>
+</body>
+</html>
